@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* width: max-content; */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    display: flex;
+    gap: 1.25rem;
+    list-style: none;
+    padding-right: 1.25rem;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: #000;
+}
+
+.hero-page {
+    background-image: url(/image/hero-image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 12.5rem;
+    padding-bottom: 12.5rem;
+    width: 100%;
+    /* padding-left: 20px; */
+    /* height: 500px; */
+}
+
+.hero-text {
+    background-color: #fff;
+    /* margin: 150px 0px 0px 30px; */
+    /* margin-right: 70%; */
+    max-width: max-content;
+    padding: 1.25rem;
+    border-radius: 0 1.875rem 1.875rem 0;
+}
+
+.hero-text h2 {
+    line-height: 1em;
+    padding-bottom: 0.625rem;
+    font-size: 2.5rem;
+    font-family: ;
+}
+
+.hero-text p {
+    font-weight: bold;
+    padding-top: 0.625rem;
+}
+.future{
+    display: flex;
+    padding: 6.25rem;
+    justify-content: space-between;
+    align-items: center;
+    max-width: max-content;
+    /* background-color: grey; */
+}
+
+.raidus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(201, 201, 201, 0.218);
+    border-radius: 3.75rem;
+}
+
+body{
+    /* max-width: max-content; */
+}
+
+.img-gallery{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0px;
+}
+.future-text{
+    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+    width: max-content;
+    
+}
+
+.future-text h3{
+    font-size: 2.5rem;
+    padding-bottom: 0.625rem;
+}
+
+.features{
+    text-align: center;
+}
+
+.features-card{
+    background-color: rgba(226, 237, 236, 0.575);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3125rem;
+    width: 12.5rem;
+    height: 12.5rem;
+    padding: 0.625;
+    border-radius: 1.25rem;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+
+
+/* tablet version */
+@media and screen(max-width: 100p0)
