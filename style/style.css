@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     /* width: max-content; */
 }
 
@@ -24,6 +24,10 @@ body{
 .nav-link a {
     text-decoration: none;
     color: #000;
+}
+
+.nav-link .hambuger {
+    display: none;
 }
 
 .hero-page {
@@ -51,55 +55,63 @@ body{
     line-height: 1em;
     padding-bottom: 0.625rem;
     font-size: 2.5rem;
-    font-family: ;
+    /* font-family: ; */
 }
 
 .hero-text p {
     font-weight: bold;
     padding-top: 0.625rem;
+    max-width: 20rem;
 }
-.future{
+
+.future {
     display: flex;
-    padding: 6.25rem;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
-    max-width: max-content;
-    /* background-color: grey; */
+    /* max-width: ; */
+    width: 90%;
+    margin: auto;
+    background-color: #f2f0f2;
+    border-radius: 50px;
+    margin-top: 4rem;
+    gap: 2rem;
+    margin-bottom: 4rem;
 }
 
-.raidus{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(201, 201, 201, 0.218);
-    border-radius: 3.75rem;
-}
-
-body{
-    /* max-width: max-content; */
-}
-
-.img-gallery{
+.img-gallery {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 0px;
-}
-.future-text{
-    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
-    width: max-content;
-    
+    max-width: 40%;
 }
 
-.future-text h3{
+.pop {
+    max-width: 100%;
+    /* outline: 2px solid yellow; */
+}
+
+.future-text {
+    width: max-content;
+    /* margin-right: 3rem; */
+
+    /* padding: 1.25rem 1.25rem 1.25rem 1.25rem; */
+    /* width: max-content; */
+
+}
+
+.future-text h3 {
     font-size: 2.5rem;
     padding-bottom: 0.625rem;
 }
 
-.features{
+.features {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-.features-card{
+.features-card {
     background-color: rgba(226, 237, 236, 0.575);
     display: flex;
     flex-direction: column;
@@ -111,14 +123,84 @@ body{
     border-radius: 1.25rem;
 }
 
-.cards{
+.cards {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1.25rem;
+    margin: 2rem;
+}
+
+.features-card {
+    background-color: #e2f1e8;
+    /* width: 305; */
 }
 
 
 
-/* tablet version */
-@media and screen(max-width: 100p0)
+/* style for a tablet screen */
+
+@media(max-width: 768px) {
+    .future-text p {
+        padding-right: 2rem;
+    }
+
+}
+
+
+/* STYLE FOR A MOBILE SCREEN  */
+
+@media(max-width: 425px) {
+    .nav-link a {
+        display: none;
+    }
+
+    .nav-link .hambuger {
+        display: block;
+    }
+
+    .hero-page {
+        padding-top: 2rem;
+        padding-bottom: 25rem;
+    }
+
+    .future {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .img-gallery {
+        max-width: 100%;
+    }
+
+    .red {
+        border-radius: 0 40px 0 0;
+    }
+
+    .future-text p {
+        max-width: 22rem;
+        padding: 0 0 2rem 0;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .features-card {
+        width: 80%;
+        /* align-content: first baseline; */
+    }
+}
+
+
+/* styling for mobile small 
+
+@media {max-width: 320px} {
+    
+    .future-text p {
+        max-width: 20rem;
+        font-size: 1rem;
+        padding: 0 0 2rem 2rem;
+    }
+} */
