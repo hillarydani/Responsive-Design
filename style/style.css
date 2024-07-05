@@ -91,10 +91,10 @@ body {
 }
 
 .future-text {
-    width: max-content;
+    width: 100%;
     /* margin-right: 3rem; */
 
-    /* padding: 1.25rem 1.25rem 1.25rem 1.25rem; */
+    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
     /* width: max-content; */
 
 }
@@ -194,13 +194,15 @@ body {
 }
 
 
-/* styling for mobile small 
+ /* styling for mobile medium  */
 
-@media {max-width: 320px} {
-    
-    .future-text p {
-        max-width: 20rem;
-        font-size: 1rem;
-        padding: 0 0 2rem 2rem;
+@media(max-width: 375px) {
+
+    .future-text{
+        padding: 1rem;
     }
-} */
+    
+    .future-text h3{
+        font-size: 1.5rem;
+    }
+} 
